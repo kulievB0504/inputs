@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    font-family: sans-serif;
+}
+
+
+.form_text {
+    text-align: center;
+
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 56px;
+
+
+
+    color: #000000;
+}
+
+.container {
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.box {
+    display: flex;
+    gap: 30px 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 620px;
+    margin: 60px auto;
+
+}
+
+.borderColorBlack {
+    align-items: center;
+    padding: 20px 12px;
+
+
+    width: 277px;
+    height: 59px;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 4px;
+
+}
+
+.input_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 6px;
+
+
+    color: #000000;
+}
+
+.input_text_blue {
+    width: 150px;
+    height: 17px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #4200FF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.get_error_text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 5px;
+    margin-left: 2px;
+    color: #595959;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.blue {
+    align-items: center;
+    padding: 20px 12px;
+    gap: 252px;
+    width: 277px;
+    height: 59px;
+    background: #FFFFFF;
+    border: 2px solid #543FD3;
+    border-radius: 4px;
+}
+
+.btn button {
+    color: white;
+    padding: 20px 12px;
+    margin: 0 auto;
+    display: block;
+    width: 277px;
+    height: 59px;
+    left: calc(50% - 350px/2 - 0.5px);
+    top: 1100px;
+    background: #4200FF;
+    border: 2px solid #4200FF;
+    border-radius: 4px;
+}
+
+.error_img {
+    position: relative;
+    top: 5px;
+    display: none;
+
+}
+
+.input {
+    position: relative;
+
+}
+
+.input::before {
+    content: "";
+    background: url(../img/error\ warning.svg);
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 40px;
+    display: none;
+
+}
+
+
+
+.Blue .input_text, .Blue input {
+    color: #4200FF;
+    border-color: #4200FF;
+}
+
+
+.Blue::after {
+    content: '';
+    display: block;
+    background-image: url(../img/error\ warning.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -30px;
+    top: 40px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+.inval .input_text {
+    color: red;
+}
+
+.inval input {
+    border-color: red !important;
+}
+
+.inval::after {
+    opacity: 1 !important;  
+}
+
+.val input {
+    border: 1px solid green;
+}
+
+button:active{
+    cursor: progress;
+}
